@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>TilSim saves your geometric patterns to your photo library so you can share and preserve your creations.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>TilSim uses device motion to create a parallax depth effect on geometric patterns.</string>
+</dict>
+</plist>
