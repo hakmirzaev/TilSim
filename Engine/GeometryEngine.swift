@@ -94,7 +94,6 @@ struct TessellationRenderer {
     ) {
         let cols = Int(size.width / cellSize) + 3
         let rows = Int(size.height / cellSize) + 3
-        let rot = rotation.radians
         
         // Layer 1: Main stars (with rotation applied per-star)
         for row in -1..<rows {

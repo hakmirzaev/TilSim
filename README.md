@@ -29,6 +29,8 @@ For over 2,500 years, the artisans of Samarkand transformed simple geometric rul
 
 **Challenge** — Can you recreate the Registan Star? Three difficulty tiers (Apprentice → Artisan → Master) progressively unlock parameters. A translucent ghost overlay guides your construction. Track your streak and score.
 
+**Sandbox** — A freeform symmetry-mirror drawing canvas. Draw with your finger and watch strokes replicate across 4–12 axes of symmetry in real time. Pick any color with the built-in color picker, adjust stroke width, and save your creation to Photos. Every stroke is rendered with smooth Catmull-Rom curves for precise, natural-looking lines.
+
 **Gallery** — Explore five historically significant patterns with architectural context, symmetry classifications, and fun facts. Tilt your device to see patterns shift with parallax depth.
 
 ## Built With
@@ -41,18 +43,18 @@ For over 2,500 years, the artisans of Samarkand transformed simple geometric rul
 | 🎵 | **AVFAudio** | Ambient background music with fade transitions |
 | 🧭 | **CoreMotion** | Device-tilt parallax in Gallery and Create views |
 
-Every pattern is generated algorithmically — zero image assets, pure mathematics. The entire app works offline.
+Every pattern is generated algorithmically — zero image assets, pure mathematics. The entire app works offline with no external dependencies.
 
 ## Design Philosophy
 
 - **Samarkand color palettes** — Five curated themes drawn from real buildings: Registan, Shah-i-Zinda, Bibi-Khanym, Ulugh Beg, and Ivory
 - **Interlocking tessellation** — Gap-fill diamonds and connecting lines replicate authentic *girih* tilework
 - **Responsive** — Adapts seamlessly between iPhone and iPad
-- **Accessible** — VoiceOver labels and hints throughout
+- **Accessible** — Full VoiceOver support with labels and hints; respects `accessibilityReduceMotion`
 
 ## Run
 
-Open `My App.swiftpm` in **Swift Playgrounds** or **Xcode** → Build → Run.
+Open `My App.swiftpm` in **Swift Playgrounds 4.6+** or **Xcode 16+** → Build & Run on an iOS 18.1+ device or simulator.
 
 No external dependencies. No network required. Just geometry.
 

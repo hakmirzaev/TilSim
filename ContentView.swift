@@ -34,6 +34,8 @@ struct ContentView: View {
         }
     }
     
+    @State private var musicOn = true
+    
     private var mainView: some View {
         TabView(selection: $selectedTab) {
             Tab("Learn", systemImage: "pencil.and.ruler", value: 0) {
@@ -52,5 +54,20 @@ struct ContentView: View {
             }
         }
         .tint(.tilSimGold)
+        .overlay(alignment: .topTrailing) {
+            Button(action: {
+                MusicPlayer.shared.toggle()
+                musicOn = !MusicPlayer.shared.isMuted
+                HapticsEngine.shared.tap()
+            }) {
+                Image(systemName: musicOn ? "speaker.wave.2.fill" : "speaker.slash.fill")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Color.tilSimGold.opacity(0.6))
+                    .padding(8)
+                    .background(Circle().fill(.ultraThinMaterial))
+            }
+            .padding(.trailing, 52)
+            .padding(.top, 8)
+        }
     }
 }

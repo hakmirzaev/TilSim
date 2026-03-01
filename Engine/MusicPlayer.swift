@@ -40,13 +40,14 @@ class MusicPlayer {
         }
     }
     
+    var isMuted = false
+    
     func toggle() {
-        if player?.isPlaying == true {
-            isEnabled = false
-            stop()
+        isMuted.toggle()
+        if isMuted {
+            fadeVolume(to: 0, duration: 0.5)
         } else {
-            isEnabled = true
-            start()
+            fadeVolume(to: 0.12, duration: 0.5)
         }
     }
     
