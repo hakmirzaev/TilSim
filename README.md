@@ -63,3 +63,7 @@ No external dependencies. No network required. Just geometry.
 <p align="center">
   <em>"From one simple rule, infinite beauty emerges."</em>
 </p>
+
+Distributed under the MIT license. See LICENSE for more information.
+
+Developed with ❤️ by Bekhruz Hakmirzaev
